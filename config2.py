@@ -1,0 +1,7 @@
+api_key="u-vUxnP4QpPEmFZ34QjauS7rgDC8_mS_6QgOYTfx_6bP6stmM1NxFzoE_fG1Z1fAoj_bywD7T-p3c4Tga3x12YKuLdm95gaIgkou3UcWGVRjretAmkGbkniFJ_P2XHYx"
+
+token="YMS3nsDc5AUcix9rnsV4oQ"
+
+api_key2 = "AIzaSyAfq9IpX2PQ8XLWPKdO81iCV8f0aoH1dcc"
+
+gkey = "AIzaSyCOjS20hrigWbp9pozTNcAXmi4VJvGX4QQ"
