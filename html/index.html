@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Trends by Latitude</title>
+  <!-- Strap those boots -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/css/index_style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Group the things for better display on phones -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="index.html">Home</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a target="_blank" href="https://github.com/jbizzlefoshizzle/Weather_Trends_vs_Latitude">Github Repo</a></li>
+            <li><a href="data.html">Data</a></li>
+            <li><a href="comparison.html">Comparison</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualizations<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="latitude_vs_temp.html">Latitude vs. Max Temperature</a></li>
+              <li><a href="latitude_vs_humidity.html">Latitude vs. Humidity</a></li>
+              <li><a href="latitude_vs_cloud.html">Latitude vs. Cloudiness</a></li>
+              <li><a href="latitude_vs_wind_speed.html">Latitude vs. Wind Speed</a></li>
+              <li role="separator" class="divider"></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- end navbar-collapse -->
+    </div>
+    <!-- end container-fluid -->
+  </nav>
+
+  <!-- create chunks for the visuals and text -->
+  <div class="container">
+
+    <div class="row">
+
+        <div class="col-md-6 pad top">
+          
+          <h3>Summary</h3>
+          
+        </div>
+
+        <div class="col-md-6 pad top">
+          
+          <h3>Visualizations</h3>
+          
+        </div>
+
+      </div>
+
+    <div class="row">
+
+        <div class="col-md-6 pad top"> 
+
+          <div class="pull-left">
+            <img src="images/lat_vs_temp.png" alt="Latitude vs. Max Temperature" width="324" height="216">
+          </div>
+
+          <div class="text-left">
+            <p> The purpose of this project was to see if the weather gets warmer as you get closer to the
+                equator.  To accomplish this, I pulled data from the OpenWeatherMap
+                API to create a database with information from over 500 randomly chosen cities. </p>
+            <p> Matplotlib was used to plot various aspects of weather
+                against latitude. We looked at temperature, cloudiness, wind-speed and humidity. </p>
+          </div>
+
+        </div>
+
+        <div class="col-md-3 pad top">
+
+          <div class="pull-right">
+            <a href="latitude_vs_temp.html"><img src="images/lat_vs_temp.png" alt="Latitude vs. Max Temperature" width="110%" height="110%"></a>
+            <a href="latitude_vs_wind_speed.html"><img src="images/lat_vs_wind.png" alt="Latitude vs. Wind Speed" width="110%" height="110%"></a>
+          </div>
+
+       </div>
+
+       <div class="col-md-3 pad top">
+
+        <div class="pull-right">
+          <a href="latitude_vs_humidity.html"><img src="images/lat_vs_hum.png" alt="Latitude vs. Humidity" width="110%" height="110%"></a>
+          <a href="latitude_vs_cloud.html"><img src="images/lat_vs_cloud.png" alt="Latitude vs. Cloudiness" width="110%" height="110%"></a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  </html>
