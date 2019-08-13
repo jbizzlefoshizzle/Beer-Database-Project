@@ -14,12 +14,7 @@
   p {
       color: white;
       text-shadow: 3px 2px red;
-  .navbar {
-                background-color: #4267b2;
-               font-family: Calibri;
-               font-weight: bold;
-               color: rgb(255,255,255);
-}
+  }
   /* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
   .wrapper {
     position: relative;
@@ -27,7 +22,20 @@
     padding-bottom: 130px;
     overflow: auto;
   }
-  
+  .navbar {
+    background-color: #4267b2;
+               font-family: Calibri;
+               font-weight: bold;
+               color: rgb(255,255,255);
+  }
+
+  .navbar-brand {
+    background-color: #4267b2;
+    padding-left: 30px;
+    font-family: Calibri;
+    font-weight: bold;
+    color: rgb(255,255,255);
+}
   /* The footer is positioned at the bottom of the page */
   .footer {
     position: absolute;

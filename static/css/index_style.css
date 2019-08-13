@@ -37,7 +37,9 @@ p {
 .navbar {
          padding-left: 50px;
          background-color: #4267b2;
-         color: white;
+               font-family: Calibri;
+               font-weight: bold;
+               color: rgb(255,255,255);
 }
 
 .navbar-brand {
