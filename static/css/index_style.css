@@ -33,20 +33,30 @@ p {
 .container {
   background-color: white;
 }
-
-.navbar {
-         padding-left: 50px;
-         background-color: #4267b2;
-               font-family: Calibri;
-               font-weight: bold;
-               color: rgb(255,255,255);
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 130px;
+  overflow: auto;
 }
-
+.navbar {
+  background-color: #4267b2;
+  font-family: Calibri;
+  font-weight: bold;
+  color: rgb(255,255,255);
+}
+.navbar-header {
+  background-color: #4267b2;
+  font-family: Calibri;
+  font-weight: bold;
+  color: rgb(255,255,255);
+}
 .navbar-brand {
-               background-color: #4267b2;
-               font-family: Calibri;
-               font-weight: bold;
-               color: rgb(255,255,255);
+  background-color: #4267b2;
+  padding-left: 30px;
+  font-family: Calibri;
+  font-weight: bold;
+  color: rgb(255,255,255);
 }
 
 /* Set a navbar for tiny phones */

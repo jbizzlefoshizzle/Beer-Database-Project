@@ -1,7 +1,6 @@
 d3.csv("../beer_winners.csv", function(error, data) {
     if (error) throw error;
 
-    console.log(data)
     var beer_name = data.map(row => row["Beer Name"]);
     var brewery = data.map(row => row.Brewery);
     var medal = data.map(row => row.Medal);
@@ -11,9 +10,9 @@ d3.csv("../beer_winners.csv", function(error, data) {
     var state = data.map(row => row.State);
     var year = data.map(row => row.Year);
     var totalCategoryEntries = data.map(row => row["Total Category Entries"]);
-    // console.log(medal)
+    
 function buildTable() {
-    // var medal = data.map(row => row.Medal);
+    
     var table = d3.select("#beer-table");
     var tbody = table.select("tbody");
     var trow
@@ -34,4 +33,3 @@ function buildTable() {
 };
 buildTable()
 });
-// console.log(medal)
