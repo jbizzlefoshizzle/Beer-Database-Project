@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Beer Dataset</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="../static/css/data_style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>  
+          <a class="navbar-brand" href="index.html">Home
+            <!-- <img class="nav-ufo" src="static/images/ufo.svg"> -->
+          </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a target="_blank" href="https://github.com/jbizzlefoshizzle/Weather_Trends_vs_Latitude">Github Repo</a></li>
+                <li><a href="data.html">Data</a></li>
+                <li><a href="comparison.html">Comparison</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualizations<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="latitude_vs_temp.html">Latitude vs. Max Temperature</a></li>
+                  <li><a href="latitude_vs_humidity.html">Latitude vs. Humidity</a></li>
+                  <li><a href="latitude_vs_cloud.html">Latitude vs. Cloudiness</a></li>
+                  <li><a href="latitude_vs_wind_speed.html">Latitude vs. Wind Speed</a></li>
+                  <li role="separator" class="divider"></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- end navbar-collapse -->
+        </div>
+        <!-- end container-fluid -->
+      </nav>
+    <div class="hero text-center">
+      <h1>Comprehensive Beer Data</h1>
+      <p>Cure What Ales You</p>
+    </div>
+    <div class="container">
+      <div class="row margin-top-50">
+        <div class="col-md-2">
+          <aside class="filters">
+            <div class="panel panel-default">
+              <div class="panel-heading">Filter Search</div>
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <label for="date">Year</label>
+                        <input class="form-control" id="input" type="text" placeholder="2018"> <!-- BOOKMARK THIS ROW  -->
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="city">City</label>
+                        <input class="form-control" id="input" type="text" placeholder="San Diego"> <!-- BOOKMARK THIS ROW  -->
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="state">State</label>
+                        <input class="form-control" id="input" type="text" placeholder="CA"> <!-- BOOKMARK THIS ROW  -->
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="country">County</label>
+                        <input class="form-control" id="input" type="text" placeholder="San Diego"> <!-- BOOKMARK THIS ROW  -->
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="shape">Medal</label>
+                        <input class="form-control" id="input" type="text" placeholder="Gold"> <!-- BOOKMARK THIS ROW  -->
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="duration">Beer</label>
+                        <input class="form-control" id="input" type="text" placeholder=""> <!-- BOOKMARK THIS ROW  -->
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="duration">Brewery</label>
+                        <input class="form-control" id="input" type="text" placeholder=""> <!-- BOOKMARK THIS ROW  -->
+                        </li>
+                    </ul>
+                  </div>
+                  <button id="filter-btn" type="button" class="btn btn-default" onclick="searchThings()">Filter Table</button>
+                </form>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="col-md-10">
+          <div id="table-area" class="">
+            <table id="beer-table" class="table table-striped"> <!-- BOOKMARK THIS ROW  -->
+              <thead>
+                <tr>
+                  <th class="table-head">Beer</th>
+                  <th class="table-head">Brewery</th>
+                  <th class="table-head">Medal</th>
+                  <th class="table-head">Category</th>
+                  <th class="table-head">City</th>
+                  <th class="table-head">County</th>
+                  <th class="table-head">State</th>
+                  <th class="table-head">Year</th>
+                  <th class="table-head"># of entries</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <span class="bottom">Great American Beer Festival Winners</span>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script type="text/javascript" src="/static/js/data.js"></script>
+</body>
+
+</html>
