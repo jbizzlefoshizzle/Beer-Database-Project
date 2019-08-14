@@ -55,46 +55,32 @@
       <div class="row margin-top-50">
         
           <aside class="filters">
-            <div class="panel panel-default">
-              <div class="panel-heading">Filter Search</div>
-              <div class="panel-body">
-                <form>
-                  <div class="form-group">
-                    <ul class="list-group" id="filters">
-                      <li class="filter list-group-item">
-                        <label for="date">Year</label>
-                        <input class="form-control" id="input" type="text" placeholder="2018"> <!-- BOOKMARK THIS ROW  -->
-                      </li>
-                      <li class="filter list-group-item">
-                        <label for="city">City</label>
-                        <input class="form-control" id="input" type="text" placeholder="San Diego"> <!-- BOOKMARK THIS ROW  -->
-                      </li>
-                      <li class="filter list-group-item">
-                        <label for="state">State</label>
-                        <input class="form-control" id="input" type="text" placeholder="CA"> <!-- BOOKMARK THIS ROW  -->
-                      </li>
-                      <li class="filter list-group-item">
-                        <label for="country">County</label>
-                        <input class="form-control" id="input" type="text" placeholder="San Diego"> <!-- BOOKMARK THIS ROW  -->
-                      </li>
-                      <li class="filter list-group-item">
-                        <label for="shape">Medal</label>
-                        <input class="form-control" id="input" type="text" placeholder="Gold"> <!-- BOOKMARK THIS ROW  -->
-                      </li>
-                      <li class="filter list-group-item">
-                        <label for="duration">Beer</label>
-                        <input class="form-control" id="input" type="text" placeholder=""> <!-- BOOKMARK THIS ROW  -->
-                      </li>
-                      <li class="filter list-group-item">
-                        <label for="duration">Brewery</label>
-                        <input class="form-control" id="input" type="text" placeholder=""> <!-- BOOKMARK THIS ROW  -->
-                        </li>
-                    </ul>
-                  </div>
-                  <button id="filter-btn" type="button" class="btn btn-default" onclick="searchThings()">Filter Table</button>
-                </form>
-              </div>
-            </div>
+              <form class="form-inline">
+                <div class="form-group">
+                  <input class="form-control" id="input" type="text" placeholder="Year"> <!-- BOOKMARK THIS ROW  -->                  </div>
+                <div class="form-group">
+                    <input class="form-control" id="input" type="text" placeholder="City"> <!-- BOOKMARK THIS ROW  -->
+                </div>
+                <div class="form-group">
+                    <input class="form-control" id="input" type="text" placeholder="State"> <!-- BOOKMARK THIS ROW  -->
+                </div>
+                <div class="form-group">
+                    <input class="form-control" id="input" type="text" placeholder="County"> <!-- BOOKMARK THIS ROW  -->
+                </div>
+                <div class="form-group">
+                    <input class="form-control" id="input" type="text" placeholder="Medal"> <!-- BOOKMARK THIS ROW  -->
+                </div>
+                <div class="form-group">
+                    <input class="form-control" id="input" type="text" placeholder="Beer"> <!-- BOOKMARK THIS ROW  -->
+                </div>
+                <div class="form-group">
+                    <input class="form-control" id="input" type="text" placeholder="Brewery"> <!-- BOOKMARK THIS ROW  -->
+                </div>
+
+              </form>
+
+            <button id="filter-btn" type="button" class="btn btn-default" onclick="searchThings()">Filter Table</button>
+
           </aside>
         
         
