@@ -24,7 +24,7 @@ button.on("click", function() {
      // Getting a reference to the date input value on the page with the id 
      var catInput = d3.select("#category").property("value");
      var medalInput = d3.select("#medal").property("value");
-     var yearInput = d3.select("#year").property("value");
+     var yearInput = parseInt(d3.select("#year").property("value"));
      var countyInput = d3.select("#county").property("value");
      var stateInput = d3.select("#state").property("value");
      var beerInput = d3.select("#beer").property("value");
@@ -57,7 +57,7 @@ button.on("click", function() {
     };
 
     if (beerInput){
-        filterData = filterData.filter(myData => myData.Beer_Name === beerInput);
+        filterData = filterData.filter(myData => myData["Beer Name"] === beerInput);
     };
     if (cityInput){
         filterData = filterData.filter(myData => myData.City === cityInput);
