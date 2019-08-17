@@ -140,6 +140,10 @@
     animation: subtitle 1.2s forwards linear;
     animation-delay: 1.2s;
   }
+
+  .form-group {
+    width: auto;
+  }
   
   /* input placeholder color changes */
   .form-control::-webkit-input-placeholder {

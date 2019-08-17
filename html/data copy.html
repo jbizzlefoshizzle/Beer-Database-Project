@@ -53,54 +53,98 @@
     </div>
     <div class="container">
       <div class="row margin-top-50">
-        
-          <aside class="filters">
-              <form class="form-inline">
-                <div class="form-group">
-                  <input class="form-control" id="input" type="text" placeholder="Year"> <!-- BOOKMARK THIS ROW  -->                  </div>
-                <div class="form-group">
-                    <input class="form-control" id="input" type="text" placeholder="City"> <!-- BOOKMARK THIS ROW  -->
-                </div>
-                <div class="form-group">
-                    <input class="form-control" id="input" type="text" placeholder="State"> <!-- BOOKMARK THIS ROW  -->
-                </div>
-                <div class="form-group">
-                    <input class="form-control" id="input" type="text" placeholder="County"> <!-- BOOKMARK THIS ROW  -->
-                </div>
-                <div class="form-group">
-                    <input class="form-control" id="input" type="text" placeholder="Medal"> <!-- BOOKMARK THIS ROW  -->
-                </div>
-                <div class="form-group">
-                    <input class="form-control" id="input" type="text" placeholder="Beer"> <!-- BOOKMARK THIS ROW  -->
-                </div>
-                <div class="form-group">
-                    <input class="form-control" id="input" type="text" placeholder="Brewery"> <!-- BOOKMARK THIS ROW  -->
-                </div>
+        <aside class="filters">
+          <div class="filters">
+            <form class="form-inline">
+              <div class="form-group">
+                <ul class="category" id="filters">
+                  <li class="filter list-group-item">
+                    <input class="form-control" id="category" type="text" placeholder="Category"> <!-- BOOKMARK THIS ROW  -->  
+                  </li>
+                </ul>
+              </div>                
+              <div class="form-group">
+                <ul class="medal" id="filters">
+                  <li class="filter list-group-item">
+                    <input class="form-control" id="medal" type="text" placeholder="Medal"> <!-- BOOKMARK THIS ROW  -->
+                  </li>
+                </ul>
+              </div>
+              <div class="form-group">
+                <ul class="year" id="filters">
+                  <li class="filter list-group-item">
+                    <input class="form-control" id="year" type="number" placeholder="Year"> <!-- BOOKMARK THIS ROW  -->
+                  </li>
+                </ul>
+              </div>
+              <div class="form-group">
+                <ul class="county" id="filters">
+                  <li class="filter list-group-item">
+                    <input class="form-control" id="county" type="text" placeholder="County"> <!-- BOOKMARK THIS ROW  -->
+                  </li>
+                </ul>
+              </div>
+              <div class="form-group">
+                <ul class="state" id="filters">
+                  <li class="filter list-group-item">
+                    <input class="form-control" id="state" type="text" placeholder="State"> <!-- BOOKMARK THIS ROW  -->
+                  </li>
+                </ul>
+              </div>
+              <div class="form-group">
+                <ul class="beer" id="filters">
+                  <li class="filter list-group-item">
+                    <input class="form-control" id="beer" type="text" placeholder="Beer Name"> <!-- BOOKMARK THIS ROW  -->
+                  </li>
+                </ul>
+              </div>
+              <div class="form-group">
+                <ul class="city" id="filters">
+                  <li class="filter list-group-item">
+                    <input class="form-control" id="city" type="text" placeholder="City"> <!-- BOOKMARK THIS ROW  -->
+                  </li>
+                </ul>
+              </div>
+              <div class="form-group">
+                <ul class="entries" id="filters">
+                  <li class="filter list-group-item">
+                    <input class="form-control" id="entries" type="text" placeholder="# of Entries"> <!-- BOOKMARK THIS ROW  -->
+                  </li>
+                </ul>
+              </div>
+              <div class="form-group">
+                <ul class="brewery" id="filters">
+                  <li class="filter list-group-item">
+                    <input class="form-control" id="brewery" type="text" placeholder="Brewery Name"> <!-- BOOKMARK THIS ROW  -->
+                  </li>
+                </ul>
+              </div>
+          
+            </form>
 
-              </form>
+            <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+            <!-- <button type="reset button" class="btn btn-default" value="Reset">Reset</button> -->
 
-            <button id="filter-btn" type="button" class="btn btn-default" onclick="searchThings()">Filter Table</button>
+          </div>
 
-          </aside>
-        
+        </aside>
         
           <div id="table-area" class="">
             <table id="beer-table" class="table table-striped"> <!-- BOOKMARK THIS ROW  -->
               <thead>
                 <tr>
-                  <th class="table-head">Beer</th>
-                  <th class="table-head">Brewery</th>
-                  <th class="table-head">Medal</th>
                   <th class="table-head">Category</th>
-                  <th class="table-head">City</th>
+                  <th class="table-head">Medal</th>
+                  <th class="table-head">Year</th>
                   <th class="table-head">County</th>
                   <th class="table-head">State</th>
-                  <th class="table-head">Year</th>
-                  <th class="table-head"># of entries</th>
+                  <th class="table-head">Beer</th>
+                  <th class="table-head">City</th>
+                  <th class="table-head"># of Entries</th>
+                  <th class="table-head">Brewery</th>
                 </tr>
               </thead>
-              <tbody>
-              </tbody>
+              <tbody></tbody>
             </table>
           </div>
         
@@ -111,7 +155,9 @@
     </footer>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-  <script type="text/javascript" src="/static/js/data.js"></script>
+  <script src="/static/js/data.js"></script>
+  <script src="/static/js/app.js"></script>
+
 </body>
 
 </html>
