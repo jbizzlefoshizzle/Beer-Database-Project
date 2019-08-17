@@ -78,17 +78,18 @@ Highcharts.chart('container', {
         drilldown: 'Pizza Port Solana Beach'
       }, {
         name: 'All Other Award-Winning SD Breweries',
-        y: 6,
+        y: 54,
         drilldown: 'All Other Award-Winning SD Breweries'
       },{
         name: 'Pizza Port Ocean Beach',
-        y: 5,
+        y: 6,
         drilldown: 'Pizza Port Ocean Beach'
       }]
     }],
     drilldown: {
       series: [
-          {   
+          { 
+        name: '% Share of Brewery Medals',      
         id: 'All Other Award-Winning SD Breweries',
         data: [
           ['American-Style Amber/Red Ale', 4],
@@ -147,6 +148,7 @@ Highcharts.chart('container', {
           ['Wood- and Barrel-Aged Strong Stout', 1]
         ]
       }, {
+        name: '% Share of Brewery Medals',
         id: 'Pizza Port Carlsbad',
         data: [
           ['American Style Brown Ale', 2],
@@ -163,6 +165,7 @@ Highcharts.chart('container', {
           ['Sweet Stout', 1]
         ]
       }, {
+        name: '% Share of Brewery Medals',
         id: 'AleSmith Brewing Co.',
         data: [
           ['American-Style Strong Pale Ale', 1],
@@ -173,6 +176,7 @@ Highcharts.chart('container', {
           ['Scotch Ale', 1]
         ]
       }, {
+        name: '% Share of Brewery Medals',
         id: 'The Lost Abbey',
         data: [
           ['Wood- and Barrel-Aged Sour Beer (collab with Port Brewing Co.)', 1],
@@ -183,6 +187,7 @@ Highcharts.chart('container', {
           ['Wood- and Barrel-Aged Sour Beer', 1]
         ]
       }, {
+        name: '% Share of Brewery Medals',
         id: 'Pizza Port Solana Beach',
         data: [
           ['American-Style Stout', 1],
@@ -193,6 +198,7 @@ Highcharts.chart('container', {
           ['Oatmeal Stout', 3]
         ]
       }, {
+        name: '% Share of Brewery Medals',
         id: 'Pizza Port Ocean Beach',
         data: [
           ['Coffee Beer', 1],
@@ -202,7 +208,8 @@ Highcharts.chart('container', {
           ['Imperial Red Ale', 1],
           ['Session Beer', 2]
         ]
-      }]
+      }
+      ]//end series
     }
   });
   
