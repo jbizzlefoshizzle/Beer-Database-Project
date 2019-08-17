@@ -12,8 +12,8 @@ var color = d3.scaleOrdinal()
 // Generate arc
 var arc = d3.arc()
     .outerRadius(radius - 10)
-    .innerRadius(0)
-    // .innerRadius(radius - 70);
+    // .innerRadius(0)
+    .innerRadius(radius - 70);
 // Generate text
 var labelArc = d3.arc()
     .outerRadius(radius - 50)
