@@ -8,7 +8,7 @@
     height: 100%;
     padding: 0;
     margin: 0;
-    background-color: lightgray;
+    background-color: darkgrey;
   }
   h1,
   p {
@@ -74,15 +74,26 @@
   .btn {
     background-color: green;
     border: white;
+    border-radius: 12px;
+    position: relative;
+    left: 42px;
+    padding: 12px 33px;
   }
   
   /* Adding styles to the aside and filter form */
   .ufo-form {
     margin-top: 50px;
   }
+
+  .form-heading {
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: "100";
+  }
   
   .filters .panel-body {
     padding: 0;
+    
   }
   
   .filters {
@@ -98,7 +109,7 @@
   }
   
   #table-area th {
-    text-align: center;
+    text-align: left;
   }
   
   #table-area th:first-child,
@@ -144,7 +155,7 @@
   .form-group {
     width: auto;
   }
-  
+
   /* input placeholder color changes */
   .form-control::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */

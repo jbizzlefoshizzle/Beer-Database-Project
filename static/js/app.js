@@ -29,7 +29,7 @@ button.on("click", function() {
      var stateInput = d3.select("#state").property("value");
      var beerInput = d3.select("#beer").property("value");
      var cityInput = d3.select("#city").property("value");
-     var entriesInput = d3.select("#entries").property("value");
+    //  var entriesInput = d3.select("#entries").property("value");
      var breweryInput = d3.select("#brewery").property("value");
 
      // get the filter data
@@ -62,9 +62,9 @@ button.on("click", function() {
     if (cityInput){
         filterData = filterData.filter(myData => myData.City === cityInput);
     };
-    if (entriesInput){
-        filterData = filterData.filter(myData => myData.Total_Category_Entries === entriesInput);
-    };
+    // if (entriesInput){
+    //     filterData = filterData.filter(myData => myData.Total_Category_Entries === entriesInput);
+    // };
     if (breweryInput){
         filterData = filterData.filter(myData => myData.Brewery === breweryInput);
     };

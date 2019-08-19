@@ -53,68 +53,101 @@
     </div>
     <div class="container">
       <div class="row margin-top-50">
-        
-          <aside class="filters">
-            <div class="panel panel-default">
-              <div class="panel-heading">Filter Search</div>
-              <div class="panel-body">
-            
-                  <div class="form-group">
-                    <ul class="list-group" id="filters">
-                      <li class="filter list-group-item">
-                        <label for="date">Year</label>
-                        <input class="form-control" id="input" type="text" placeholder="2018"> <!-- BOOKMARK THIS ROW  -->
-                      </li>
-                      <li class="filter list-group-item">
-                        <label for="city">City</label>
-                        <input class="form-control" id="input" type="text" placeholder="San Diego"> <!-- BOOKMARK THIS ROW  -->
-                      </li>
-                      <li class="filter list-group-item">
-                        <label for="state">State</label>
-                        <input class="form-control" id="input" type="text" placeholder="CA"> <!-- BOOKMARK THIS ROW  -->
-                      </li>
-                      <li class="filter list-group-item">
-                        <label for="country">County</label>
-                        <input class="form-control" id="input" type="text" placeholder="San Diego"> <!-- BOOKMARK THIS ROW  -->
-                      </li>
-                      <li class="filter list-group-item">
-                        <label for="shape">Medal</label>
-                        <input class="form-control" id="input" type="text" placeholder="Gold"> <!-- BOOKMARK THIS ROW  -->
-                      </li>
-                      <li class="filter list-group-item">
-                        <label for="duration">Beer</label>
-                        <input class="form-control" id="input" type="text" placeholder=""> <!-- BOOKMARK THIS ROW  -->
-                      </li>
-                      <li class="filter list-group-item">
-                        <label for="duration">Brewery</label>
-                        <input class="form-control" id="input" type="text" placeholder=""> <!-- BOOKMARK THIS ROW  -->
-                        </li>
-                    </ul>
-                  </div>
-                  <button id="filter-btn" type="button" class="btn btn-default" onclick="searchThings()">Filter Table</button>
-           
+        <!-- <aside class="filters"> -->
+        <h3>Beer Data Search</h3>
+
+          <div class="filters">
+
+            <form class="form-inline">
+              <div class="form-group">
+                <ul class="category" id="filters">
+                  <li class="filter list-group-item">
+                    <input class="form-control" size="15" id="category" type="text" placeholder="Category"> 
+                  </li>
+                </ul>
+              </div>                
+              <div class="form-group">
+                <ul class="medal" id="filters">
+                  <li class="filter list-group-item">
+                    <input class="form-control" size="15" id="medal" type="text" placeholder="Medal">
+                  </li>
+                </ul>
               </div>
-            </div>
-          </aside>
-        
+              <div class="form-group">
+                <ul class="year" id="filters">
+                  <li class="filter list-group-item">
+                    <input class="form-control" size="15" id="year" type="text" placeholder="Year">
+                  </li>
+                </ul>
+              </div>
+              <div class="form-group">
+                <ul class="county" id="filters">
+                  <li class="filter list-group-item">
+                    <input class="form-control" size="15" id="county" type="text" placeholder="County"> 
+                  </li>
+                </ul>
+              </div>
+              <div class="form-group">
+                <ul class="state" id="filters">
+                  <li class="filter list-group-item">
+                    <input class="form-control" size="15" id="state" type="text" placeholder="State"> 
+                  </li>
+                </ul>
+              </div>
+              <div class="form-group">
+                <ul class="beer" id="filters">
+                  <li class="filter list-group-item">
+                    <input class="form-control" size="15" id="beer" type="text" placeholder="Beer Name"> 
+                  </li>
+                </ul>
+              </div>
+              <div class="form-group">
+                <ul class="city" id="filters">
+                  <li class="filter list-group-item">
+                    <input class="form-control" size="15" id="city" type="text" placeholder="City"> 
+                  </li>
+                </ul>
+              </div>
+              <!-- <div class="form-group">
+                <ul class="entries" id="filters">
+                  <li class="filter list-group-item">
+                    <input class="form-control" id="entries" type="text" placeholder="# of Entries"> 
+                  </li>
+                </ul>
+              </div> -->
+              <div class="form-group">
+                <ul class="brewery" id="filters">
+                  <li class="filter list-group-item">
+                    <input class="form-control" size="15" id="brewery" type="text" placeholder="Brewery Name">
+                  </li>
+                </ul>
+              </div>
+                   <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                   <button type="reset button" class="btn btn-default" value="Reset">Reset</button>
+            </form>
+
+            <!-- <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+            <button type="reset button" class="btn btn-default" value="Reset">Reset</button> -->
+
+          </div>
+
+        <!-- </aside> -->
         
           <div id="table-area" class="">
-            <table id="beer-table" class="table table-striped"> <!-- BOOKMARK THIS ROW  -->
+            <table id="beer-table" class="table table-striped"> 
               <thead>
                 <tr>
+                  <th class="table-head">Medal</th>
                   <th class="table-head">Beer</th>
                   <th class="table-head">Brewery</th>
-                  <th class="table-head">Medal</th>
-                  <th class="table-head">Category</th>
                   <th class="table-head">City</th>
-                  <th class="table-head">County</th>
                   <th class="table-head">State</th>
+                  <th class="table-head">County</th>
+                  <th class="table-head">Category</th>
                   <th class="table-head">Year</th>
-                  <th class="table-head"># of entries</th>
                 </tr>
               </thead>
-              <tbody>
-              </tbody>
+              <tbody></tbody>
             </table>
           </div>
         
@@ -125,7 +158,9 @@
     </footer>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-  <script type="text/javascript" src="/static/js/data.js"></script>
+  <script src="/static/js/data.js"></script>
+  <script src="/static/js/app.js"></script>
+
 </body>
 
 </html>
