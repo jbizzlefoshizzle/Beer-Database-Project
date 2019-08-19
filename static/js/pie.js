@@ -5,7 +5,7 @@ var pieColors = (function () {
         i;
 
     for (i = 0; i < 10; i += 1) {
-        // Start out with a darkened base color (negative brighten), and end
+        // Start out with a darkened base color, and end
         // up with a much brighter color
         colors.push(Highcharts.Color(base).brighten((i - 5.2) / 7).get());
     }
@@ -42,7 +42,6 @@ Highcharts.chart('container', {
             allowPointSelect: true,
             cursor: 'pointer',
             colors: pieColors,
-            // text: blahl,
             // innerSize: 150, //TOGGLE DONUT!
             dataLabels: {
                 enabled: true,

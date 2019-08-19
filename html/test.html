@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Intro</title>
+        <link rel="stylesheet" type="text/css" href="../static/css/test.css" />
+        <!-- DO NOT DELETE -->
+        <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+        <!-- DO NOT DELETE -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" -->
+	</head>
+	<body>
+		<main>
+                <div class="container container-table">
+                        <div class="row vertical-center-row">
+                            <div class="text-center col-md-6 col-md-offset-3">
+                                <div class="text">
+                                    <h2 class="ml12">Hello Everybody</h2>
+                                </div>
+                                <a href = "splash.html" class="btn btn-default">Let's Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+			<div class="content">
+				<!-- Pieces Slider -->
+				<div class="pieces-slider">
+					<!-- Each slide with corresponding image and text -->
+					<div class="pieces-slider__slide">
+						<img class="pieces-slider__image" src="../static/images/Brian.jpg" alt="">
+						<h2 class="pieces-slider__text">Brian Valerio</h2>
+					</div>
+					<div class="pieces-slider__slide">
+						<img class="pieces-slider__image" src="../static/images/guy1.jpg" alt="">
+						<h2 class="pieces-slider__text">Gargi C</h2>
+					</div>
+					<div class="pieces-slider__slide">
+						<img class="pieces-slider__image" src="../static/images/lady2.jpg" alt="">
+						<h2 class="pieces-slider__text">Blake S</h2>
+					</div>
+					<div class="pieces-slider__slide">
+						<img class="pieces-slider__image" src="../static/images/JB.jpg" alt="">
+						<h2 class="pieces-slider__text">J.B. Paragas</h2>
+					</div>
+					<!-- Canvas to draw the pieces -->
+					<canvas class="pieces-slider__canvas"></canvas>
+					<!-- Slider buttons: prev and next -->
+					<button class="pieces-slider__button pieces-slider__button--prev">prev</button>
+					<button class="pieces-slider__button pieces-slider__button--next">next</button>
+				</div>
+			</div>
+		</main>
+		<script src='../static/js/anime.min.js'></script>
+		<script src='../static/js/pieces.min.js'></script>
+		<script src='../static/js/test.js'></script>
+	</body>
+</html>
