@@ -62,25 +62,14 @@
   }
   
   /* This CSS styles the ufo icon in the navbar */
-  .nav-pic {
-    position: absolute;
-    bottom: 5px;
-    left: 150px;
-    width: 35px;
-    color: white;
-  }
   
   /* Adding style to the button */
   .btn {
-    background-color: green;
+    background-color: rgba(0, 0, 255, 0.671);
     border: white;
   }
   
   /* Adding styles to the aside and filter form */
-  .ufo-form {
-    margin-top: 50px;
-  }
-  
   .filters .panel-body {
     padding: 0;
   }
@@ -99,6 +88,20 @@
   
   #table-area th {
     text-align: center;
+  }
+  .table {
+    color: red;
+    background-color: gold;
+    font-size: 12;
+  }
+
+  .table-striped {
+    color: white;
+    background-color: red;
+  }
+
+  .table-hover {
+    background-color: rgba(0, 0, 255, 0.671);
   }
   
   #table-area th:first-child,
@@ -178,6 +181,7 @@
       font-size: 1.8em;
       font-weight: bold;
       background: #1b3146;
+      color: red;
     }
   
     #table-area tr td:last-child {

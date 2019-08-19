@@ -78,6 +78,7 @@ color: rgb(255,255,255);
 @media (max-width: 480px) {
 .navbar {
   background-color: #4267b2;
+  color: black;
 }
 
 .navbar-brand {
@@ -85,4 +86,5 @@ color: rgb(255,255,255);
                font-family: Calibri;
                font-weight: bold;
                color: #4267b2;
-}};
+}
+};
