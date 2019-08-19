@@ -80,22 +80,23 @@ def names():
 
 @app.route("/samples/<sample>")
 def samples(sample):
-    """Return `beer_ids`, `categories`,and `sample_values`."""
+    """Return `beer_ids`, `beer_categories`,and `sample_values`."""
     stmt = db.session.query(Samples).statement
     df = pd.read_sql_query(stmt, db.session.bind)
 
     # Filter the data based on the sample number and
     # only keep rows with values above 1
-    sample_data = df.loc[df[sample] > 1, ["beer_id", "category", sample]]
+    # sample_data = df.loc[df[sample] > 1, ["beer_id", "beer_category", sample]]
+    sample_data = df.loc[df[sample] > 0, ["beer_id", "beer_category", sample]]
 
     # Sort by sample
     sample_data.sort_values(by=sample, ascending=False, inplace=True)
 
     # Format the data to send as json
     data = {
-        "beer_id": sample_data.beer_id.values.tolist(),
+        "beer_ids": sample_data.beer_id.values.tolist(),
         "sample_values": sample_data[sample].values.tolist(),
-        "category": sample_data.category.tolist(),
+        "beer_categories": sample_data.beer_category.tolist(),
     }
     return jsonify(data)
 
