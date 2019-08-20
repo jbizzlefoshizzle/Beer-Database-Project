@@ -21,29 +21,47 @@ var button = d3.select("#filter-btn");
 //button
 button.on("click", function() {
 
-     // Getting a reference to the date input value on the page with the id 
-     var catInput = d3.select("#category").property("value");
-     console.log(catInput)
-     var medalInput = d3.select("#medal").property("value");
-     console.log(medalInput)
+     var cInput = d3.select("#category").property("value");
+     var catInput = cInput.toLowerCase();
+     console.log(catInput);
+
+     var mInput = d3.select("#medal").property("value");
+     var medalInput = mInput.toLowerCase();
+     console.log(medalInput);
+
      var yearInput = parseInt(d3.select("#year").property("value"));
-     var countyInput = d3.select("#county").property("value");
-     var stateInput = d3.select("#state").property("value");
-     var beerInput = d3.select("#beer").property("value");
-     var cityInput = d3.select("#city").property("value");
+
+     var cntyInput = d3.select("#county").property("value");
+     var countyInput = cntyInput.toLowerCase();
+     console.log(countyInput);
+
+     var sInput = d3.select("#state").property("value");
+     var stateInput = sInput.toUpperCase();
+     console.log(stateInput);
+
+     var bInput = d3.select("#beer").property("value");
+     var beerInput = bInput.toLowerCase();
+     console.log(beerInput);
+
+     var ctyInput = d3.select("#city").property("value");
+     var cityInput = ctyInput.toLowerCase();
+     console.log(cityInput);
+
     //  var entriesInput = d3.select("#entries").property("value");
-     var breweryInput = d3.select("#brewery").property("value");
+     var brwyInput = d3.select("#brewery").property("value");
+     var breweryInput = brwyInput.toLowerCase();
+     console.log(breweryInput);
 
      // get the filter data
      var filterData = tableData
 
      // filter data by input conditions, if exist
     if (catInput){
-        filterData = filterData.filter(myData => myData.Category === catInput);
+        filterData = filterData.filter(myData => myData.Category.toLowerCase() === catInput);
     };
      
     if (medalInput){
-        filterData = filterData.filter(myData => myData.Medal === medalInput);
+        filterData = filterData.filter(myData => myData.Medal.toLowerCase() === medalInput);
     };
 
     if (yearInput){
@@ -51,7 +69,7 @@ button.on("click", function() {
     };
 
     if (countyInput){
-        filterData = filterData.filter(myData => myData.County === countyInput);
+        filterData = filterData.filter(myData => myData.County.toLowerCase() === countyInput);
      };
 
     if (stateInput){
@@ -59,16 +77,16 @@ button.on("click", function() {
     };
 
     if (beerInput){
-        filterData = filterData.filter(myData => myData["Beer Name"] === beerInput);
+        filterData = filterData.filter(myData => myData["Beer Name"].toLowerCase() === beerInput);
     };
     if (cityInput){
-        filterData = filterData.filter(myData => myData.City === cityInput);
+        filterData = filterData.filter(myData => myData.City.toLowerCase() === cityInput);
     };
     // if (entriesInput){
     //     filterData = filterData.filter(myData => myData.Total_Category_Entries === entriesInput);
     // };
     if (breweryInput){
-        filterData = filterData.filter(myData => myData.Brewery === breweryInput);
+        filterData = filterData.filter(myData => myData.Brewery.toLowerCase() === breweryInput);
     };
 
      tbody.html(" ")
