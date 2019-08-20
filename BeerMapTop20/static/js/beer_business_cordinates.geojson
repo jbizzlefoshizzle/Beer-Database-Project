@@ -1,0 +1,27 @@
+{
+"type": "FeatureCollection",
+"name": "beer_business_cordinates",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::4269" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "AleSmith Brewing Company", "Rating": "4.5", "Review_Count": "418", "lat": 32.8873241, "long": -117.1493986 }, "geometry": { "type": "Point", "coordinates": [ -117.1493986, 32.8873241 ] } },
+{ "type": "Feature", "properties": { "Name": "The Original 40 Brewing", "Rating": "4.5", "Review_Count": "58", "lat": 32.74824, "long": -117.12662 }, "geometry": { "type": "Point", "coordinates": [ -117.12662, 32.74824 ] } },
+{ "type": "Feature", "properties": { "Name": "Belching Beaver Brewery North Park", "Rating": "4.5", "Review_Count": "666", "lat": 32.75452054, "long": -117.1300297 }, "geometry": { "type": "Point", "coordinates": [ -117.1300297, 32.75452054 ] } },
+{ "type": "Feature", "properties": { "Name": "Black Market Brewing - San Diego", "Rating": "4.5", "Review_Count": "39", "lat": 32.76479, "long": -117.06093 }, "geometry": { "type": "Point", "coordinates": [ -117.06093, 32.76479 ] } },
+{ "type": "Feature", "properties": { "Name": "Modern Times Beer", "Rating": "4", "Review_Count": "625", "lat": 32.754201, "long": -117.206172 }, "geometry": { "type": "Point", "coordinates": [ -117.206172, 32.754201 ] } },
+{ "type": "Feature", "properties": { "Name": "Ballast Point Little Italy", "Rating": "4.5", "Review_Count": "1798", "lat": 32.72752135, "long": -117.1698137 }, "geometry": { "type": "Point", "coordinates": [ -117.1698137, 32.72752135 ] } },
+{ "type": "Feature", "properties": { "Name": "Half Door Brewing", "Rating": "4.5", "Review_Count": "633", "lat": 32.710263, "long": -117.156272 }, "geometry": { "type": "Point", "coordinates": [ -117.156272, 32.710263 ] } },
+{ "type": "Feature", "properties": { "Name": "Societe Brewing Company", "Rating": "4", "Review_Count": "607", "lat": 32.833889, "long": -117.146375 }, "geometry": { "type": "Point", "coordinates": [ -117.146375, 32.833889 ] } },
+{ "type": "Feature", "properties": { "Name": "Pure Project", "Rating": "4.5", "Review_Count": "661", "lat": 32.8873375, "long": -117.1555986 }, "geometry": { "type": "Point", "coordinates": [ -117.1555986, 32.8873375 ] } },
+{ "type": "Feature", "properties": { "Name": "Kilowatt Brewing", "Rating": "4.5", "Review_Count": "193", "lat": 32.8333702, "long": -117.1560135 }, "geometry": { "type": "Point", "coordinates": [ -117.1560135, 32.8333702 ] } },
+{ "type": "Feature", "properties": { "Name": "Ketch Brewing", "Rating": "4.5", "Review_Count": "27", "lat": 32.81315, "long": -117.15545 }, "geometry": { "type": "Point", "coordinates": [ -117.15545, 32.81315 ] } },
+{ "type": "Feature", "properties": { "Name": "Mission Brewery", "Rating": "4.5", "Review_Count": "694", "lat": 32.70715, "long": -117.151592 }, "geometry": { "type": "Point", "coordinates": [ -117.151592, 32.70715 ] } },
+{ "type": "Feature", "properties": { "Name": "Modern Times Flavordome", "Rating": "4", "Review_Count": "396", "lat": 32.74139023, "long": -117.1297836 }, "geometry": { "type": "Point", "coordinates": [ -117.1297836, 32.74139023 ] } },
+{ "type": "Feature", "properties": { "Name": "Border X Brewing", "Rating": "4.5", "Review_Count": "295", "lat": 32.69803, "long": -117.13983 }, "geometry": { "type": "Point", "coordinates": [ -117.13983, 32.69803 ] } },
+{ "type": "Feature", "properties": { "Name": "Duck Foot Brewing Company", "Rating": "4.5", "Review_Count": "236", "lat": 32.885171, "long": -117.15632 }, "geometry": { "type": "Point", "coordinates": [ -117.15632, 32.885171 ] } },
+{ "type": "Feature", "properties": { "Name": "Novo Brazil Brewing", "Rating": "4", "Review_Count": "229", "lat": 32.652029, "long": -116.961474 }, "geometry": { "type": "Point", "coordinates": [ -116.961474, 32.652029 ] } },
+{ "type": "Feature", "properties": { "Name": "Mike Hess Brewing Company - North Park", "Rating": "4.5", "Review_Count": "525", "lat": 32.747702, "long": -117.128543 }, "geometry": { "type": "Point", "coordinates": [ -117.128543, 32.747702 ] } },
+{ "type": "Feature", "properties": { "Name": "Creative Creature Brewing Co.", "Rating": "5", "Review_Count": "31", "lat": 32.79558147, "long": -116.9627864 }, "geometry": { "type": "Point", "coordinates": [ -116.9627864, 32.79558147 ] } },
+{ "type": "Feature", "properties": { "Name": "Home Brew Mart - Ballast Point", "Rating": "4", "Review_Count": "452", "lat": 32.76678416, "long": -117.1952391 }, "geometry": { "type": "Point", "coordinates": [ -117.1952391, 32.76678416 ] } },
+{ "type": "Feature", "properties": { "Name": "32 North Brewing Co", "Rating": "4.5", "Review_Count": "176", "lat": 32.88274384, "long": -117.1649857 }, "geometry": { "type": "Point", "coordinates": [ -117.1649857, 32.88274384 ] } }
+]
+}
