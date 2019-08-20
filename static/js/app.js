@@ -23,7 +23,9 @@ button.on("click", function() {
 
      // Getting a reference to the date input value on the page with the id 
      var catInput = d3.select("#category").property("value");
+     console.log(catInput)
      var medalInput = d3.select("#medal").property("value");
+     console.log(medalInput)
      var yearInput = parseInt(d3.select("#year").property("value"));
      var countyInput = d3.select("#county").property("value");
      var stateInput = d3.select("#state").property("value");
