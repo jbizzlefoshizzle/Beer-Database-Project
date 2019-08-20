@@ -42,7 +42,7 @@ Highcharts.chart('container', {
             allowPointSelect: true,
             cursor: 'pointer',
             colors: pieColors,
-            // innerSize: 150, //TOGGLE DONUT!
+            innerSize: 150, //TOGGLE DONUT!
             dataLabels: {
                 enabled: true,
                 // format: '<b>{point.name}</b><br>{point.percentage:.1f} %',
