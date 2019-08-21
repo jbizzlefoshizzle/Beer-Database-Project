@@ -45,7 +45,7 @@ Highcharts.chart('container', {
         text: 'All Beers and Breweries in San Diego'
     },
     subtitle: {
-        text: 'The Squeakquel'
+        text: '(and why we narrowed it down)'
     },
     plotOptions: {
         networkgraph: {

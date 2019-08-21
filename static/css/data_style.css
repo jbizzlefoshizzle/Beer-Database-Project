@@ -53,7 +53,7 @@
     bottom: 0;
     left: 0;
     padding: 5px;
-    background: #1b3146;
+    background: #4267b2;
   }
   
   .navbar {
@@ -65,7 +65,7 @@
   
   /* Adding style to the button */
   .btn {
-    background-color: rgba(0, 0, 255, 0.671);
+    background-color: #4267b2;
     border: white;
   }
   
@@ -90,18 +90,18 @@
     text-align: center;
   }
   .table {
-    color: red;
+    color: white;
     background-color: gold;
     font-size: 12;
   }
 
   .table-striped {
     color: white;
-    background-color: red;
+    background-color: #4267b2;
   }
 
   .table-hover {
-    background-color: rgba(0, 0, 255, 0.671);
+    background-color: rgba(255, 0, 85, 0.671);
   }
   
   #table-area th:first-child,
@@ -180,8 +180,9 @@
     #table-area tr td:first-child {
       font-size: 1.8em;
       font-weight: bold;
-      background: #1b3146;
-      color: red;
+      background: #4267b2;
+      color: gold;
+      /* FONT OF MEDAL TITLES DURING PHONE MODE */
     }
   
     #table-area tr td:last-child {
@@ -199,7 +200,8 @@
   
     #table-area td {
       font-size: 1.25em;
-      color: black
+      /* FONT OF BEER DATA DURING PHONE MODE */
+      color: white
     }
   
     #table-area tbody td {
